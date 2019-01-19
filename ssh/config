@@ -1,0 +1,12 @@
+### Default For All ###
+Host *
+	ForwardAgent no
+	Port 22
+
+
+## Override As Per Host ##
+Host Girafales
+	HostName 18.228.92.59
+	User ec2-user
+	Port 22
+	IdentityFile /home/guialvesp1/Dropbox/keys/guialvesp1/Interpag/Girafales.pem

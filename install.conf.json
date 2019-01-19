@@ -1,0 +1,19 @@
+[
+    {
+        "clean": [
+            "~",
+            "~/bin/",
+            "~/.ssh/"
+        ]
+    },
+    {
+        "shell": [
+            ["mkdir -p ~/bin/ ~/.ssh/", "Creating dirs."]
+        ]
+    },
+    {
+        "link": {
+            "~/.ssh/config":"ssh/config"
+        }
+    }
+]
