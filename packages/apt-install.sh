@@ -80,6 +80,7 @@
         sudo apt install -y gnome-pomodoro
         sudo apt install -y gnome-tweak-tool
         sudo apt install -y terminator
+        sudo apt install -y pandoc
         sudo apt install -y wireshark
         sudo apt install -y zsh
         sudo apt install -y xclip

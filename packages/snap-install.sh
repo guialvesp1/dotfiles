@@ -16,8 +16,10 @@
 
     ## Development
         echo "Development"
+        sudo snap install vscode --classic
         sudo snap install code-insiders --classic
         sudo snap install datagrip --classic
+        sudo snap install postman
 
     ## Media
         echo "Media"
