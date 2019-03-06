@@ -28,6 +28,15 @@
         echo "Astah UML"
         sudo apt install -y oracle-java8-set-default
 
+    ## ProtonVPN
+        echo "ProtonVPN"
+        sudo apt install -y network-manager-openvpn-gnome
+        sudo apt install -y resolvconf
+
+    # ProtonVPN-CLI
+        echo "ProtonVPN-CLI"
+        sudo apt install -y dialog
+
 # Adding packages keys PPA
     echo "Adding packages keys PPA"
 
@@ -97,6 +106,16 @@
             cd ~/Downloads && wget -O teamviewer_amd64.deb "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
             sudo dpkg -i teamviewer_amd64.deb
             sudo rm teamviewer_amd64.deb
+
+    ## Network
+        echo "Network"
+
+        ### ProtonVPN-CLI
+            echo "ProtonVPN-CLI"
+            cd ~ && wget -O protonvpn-cli.sh "https://raw.githubusercontent.com/ProtonVPN/protonvpn-cli/master/protonvpn-cli.sh"
+            sudo chmod +x protonvpn-cli.sh
+            sudo ./protonvpn-cli.sh --install
+            sudo pvpn -init
 
 # Configuring terminal
     echo "Configuring terminal(ZSH)"
