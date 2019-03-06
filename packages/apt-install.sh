@@ -95,11 +95,11 @@
         sudo apt install -y xclip
         sudo apt install com.github.babluboy.bookworm
 
-        ### Astah UML
-            echo "Astah UML"
-            cd ~/Downloads && wget -O astah_uml_8.deb "http://cdn.change-vision.com/files/astah-uml_8.0.0.d641d4-0_all.deb"
-            sudo dpkg -i astah_uml_8.deb
-            sudo rm astah_uml_8.deb
+        ### Astah UML V8.1
+            echo "Astah UML V8.1"
+            cd ~/Downloads && wget -O astah_uml_8_1.deb "http://cdn.change-vision.com/files/astah-uml_8.1.0.3ac74f-0_all.deb"
+            sudo dpkg -i astah_uml_8_1.deb
+            sudo rm astah_uml_8_1.deb
 
         ### Teamviewer
             echo "Teamviewer"
