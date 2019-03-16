@@ -66,6 +66,8 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 plugins=(
   git
   dnf
+  virtualenv
+  virtualenvwrapper
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
