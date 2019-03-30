@@ -1,5 +1,8 @@
 ### Default For All ###
 Host *
+	AddKeysToAgent yes
+	UseKeychain yes
+	IdentityFile ~/.ssh/id_rsa
 	ForwardAgent no
 	Port 22
 
@@ -9,4 +12,7 @@ Host Girafales
 	HostName 18.228.92.59
 	User ec2-user
 	Port 22
-	IdentityFile /home/guialvesp1/Dropbox/keys/guialvesp1/Interpag/Girafales.pem
+	### Ubuntu
+	#IdentityFile /home/guialvesp1/Dropbox/keys/guialvesp1/Interpag/Girafales.pem
+	### MacOS
+	IdentityFile /Users/guialvesp1/Dropbox/keys/guialvesp1/Interpag/Girafales.pem
