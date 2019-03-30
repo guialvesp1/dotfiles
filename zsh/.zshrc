@@ -106,7 +106,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Terminal Visualization
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_folders
+#POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status
+  virtualenv
+  time
+)
 
 ## Upgrade; Update and Autoremove packcages in UbuntuOS
 alias upgradeos="sudo apt upgrade -y && sudo apt update && sudo apt autoremove -y"
@@ -127,13 +138,3 @@ alias djangors="python manage.py runserver"
 
 ### Create Super User
 alias djangocsu="python manage.py createsuperuser"
-
-# Terminal Visualization
-
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-  status
-  virtualenv
-  time
-)
-POWERLEVEL9K_SHORTEN_DIR_LENGHT=1
-POWERLEVEL9K_SHORTEN_STRATEGY=truncate_folders
