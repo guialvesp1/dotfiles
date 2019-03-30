@@ -2,7 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/guialvesp1/.oh-my-zsh"
+  ## Ubuntu Path
+  #export ZSH="/home/guialvesp1/.oh-my-zsh"
+  ## MacOS Path
+  export ZSH="/Users/guialvesp1/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,4 +106,34 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+## Upgrade; Update and Autoremove packcages in UbuntuOS
+alias upgradeos="sudo apt upgrade -y && sudo apt update && sudo apt autoremove -y"
+
+## Django
+
+### Migrade
+alias djangom="python manage.py migrate"
+
+### Make Migrations
+alias djangomm="python manage.py makemigrations"
+
+### Show Migrations
+alias djangosm="python manage.py showmigrations"
+
+### Run Server
+alias djangors="python manage.py runserver"
+
+### Create Super User
+alias djangocsu="python manage.py createsuperuser"
+
+# Terminal Visualization
+
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status
+  virtualenv
+  time
+)
+POWERLEVEL9K_SHORTEN_DIR_LENGHT=1
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_folders
