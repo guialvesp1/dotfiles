@@ -9,6 +9,11 @@
     sudo apt install -y curl
     sudo apt install -y flatpak
 
+    ## Pandoc
+        echo "Pandoc"
+        sudo apt install -y textlive-fonts-recommended
+        sudo apt install -y textlive-latex-recommended
+
     ## Dropbox
         echo "Dropbox"
         sudo apt install -y libpango1.0-0
@@ -76,7 +81,7 @@
             cd ~/Downloads && wget -O dropbox_2018.11.28_amd64.deb "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb"
             sudo dpkg -i dropbox_2018.11.28_amd64.deb
             sudo rm dropbox_2018.11.28_amd64.deb
-        
+
         ### MEGAsync
             cd ~/Downloads && wget -O megasync.deb "https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/megasync-xUbuntu_$(lsb_release -rs)_amd64.deb"
             sudo dpkg -i megasync.deb
